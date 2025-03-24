@@ -1,4 +1,3 @@
-// App.js
 import React from "react";
 import ChatAgent from "./components/ChatAgent";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
