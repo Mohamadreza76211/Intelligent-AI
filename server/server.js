@@ -17,7 +17,7 @@ app.post("/api/chat", async (req, res) => {
     const response = await axios.post(
       modelUrl,
       {
-        model: "deepseek/deepseek-r1:free", // مدل مورد نظر
+        model: "deepseek/deepseek-r1:free",
         messages: [
           {
             role: "user",
@@ -29,10 +29,10 @@ app.post("/api/chat", async (req, res) => {
         headers: {
           Authorization: `Bearer ${OPENROUTER_API_KEY}`,
           "Content-Type": "application/json",
-          "HTTP-Referer": "https://your-domain.com", // دامنه‌ی خودت رو اینجا بزار
-          "X-Title": "Your App Name", // نام اپلیکیشن خودت رو اینجا بزار
+          "HTTP-Referer": "https://your-domain.com",
+          "X-Title": "Your App Name",
         },
-        timeout: 30000, // تایم اوت ۳۰ ثانیه‌ای
+        timeout: 30000,
       }
     );
 
